@@ -1,0 +1,36 @@
+install r version 3.1.3 from this link, default install settings used: http://cran.rstudio.com/
+
+install Rtools (rTools31.exe) from this link: http://cran.r-project.org/bin/windows/Rtools/
+during the install, check the box that says "Edit path.." (it may be hiiden since there is too much text in the install window, it's the only check box you can see)
+
+install rStudio (free version) from this link, default install settings used: http://www.rstudio.com/products/rstudio/#Desk
+
+
+Open r, in command line type these commands IN SAME ORDER AS LISTED (you can also paste all at the same time) you will be prompted for a download 'mirror', choose the 1st one in the list, "0-Cloud":
+
+install.packages("ggplot2")
+install.packages("devtools")
+library(devtools)
+install_github('ramnathv/slidify')
+install_github('ramnathv/slidifyLibraries')
+
+you can test that the packages have been installed by typing these commands. 
+They will return the path in which they were installed or "TRUE"
+load the devtools library before attempting to find any packages by typing library(devtools)
+
+find_rtools()
+find.package("devtools")
+find.package("ggplot2")
+find.package("slidify")
+find.package("slidifyLibraries")
+
+Now confirm that rStudio also had the above packages installed
+open rStudio paste this chunk of code and verify they were all found:
+
+library(devtools)
+find_rtools()
+find.package("devtools")
+find.package("ggplot2")
+find.package("slidify")
+find.package("slidifyLibraries")
+
