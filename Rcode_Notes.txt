@@ -1,0 +1,49 @@
+R Code Notes
+
+getwd()    current working dir
+
+read.csv("FILENAME.CSV") read a csv
+read.table(m) read a table
+data.matrix()
+
+source("mycode.R") loads a R file for use in console
+
+print(x) prints in console
+
+## Comment
+
+x <- 5   assigns value of 5 to the variable 'x'
+y <- 1:20 assigns numbers 1 through 20 to variable 'y'
+
+
+vector() creates empty vector (datatype, length)
+attributes() lets you set or modify the attributes for an R object
+
+class(x) shows class (data type) of an object
+
+m<-matrix(nrow=2, ncol=3) creates a matrix w/ 2 rows and 3 columns
+table(m) counts the frequency of values stored in a vector
+
+is.na(m) will print TRUE is a value is empty
+is.nan(m) will print TRUE is a value is NaN (not a number)
+
+names()
+c("x","y","z")
+
+data<-read.csv(file="C:/Users/mbaldwin005/Documents/GitHub/DataScienceCoursera/specdata/013.csv",header=TRUE)    read a csv in a folder 
+data<-read.csv(file="week1quiz/hw1_data.csv",header=TRUE) same as above
+
+week1quiz/hw1_data.csv
+
+
+
+
+
+
+
+
+
+
+
+
+
